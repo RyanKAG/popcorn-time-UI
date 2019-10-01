@@ -1,0 +1,33 @@
+.item-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.flex-item{
+    flex-basis: 20%;
+    -ms-flex: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1333px) {
+    .flex-item {
+      flex-basis: 33.33%;
+    }
+  }
+  @media(max-width: 1073px) {
+     .flex-item {
+      flex-basis: 33.33%;
+    }
+  }
+  @media(max-width: 815px) {
+    .flex-item {
+      flex-basis: 50%;
+    }
+  }
+  @media(max-width: 555px) {
+    .flex-item {
+      flex-basis: 100%;
+    }
+  }
