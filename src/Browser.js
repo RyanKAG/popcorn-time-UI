@@ -6,7 +6,6 @@ import './Browser.css';
 export class Browser extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             movies: [],
         }
