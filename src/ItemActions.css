@@ -1,0 +1,101 @@
+.actions-container{
+    position: relative;
+    opacity: 1;
+    border: 3px solid rgb(76, 117, 219);
+    height: 216px;
+    width: 148px;
+    animation-name: fadein;
+    animation-duration: 0.2s;
+}
+.actions-row{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin: 0;
+    padding: 8px 8px 0 8px;
+}
+.actions{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 222px;
+    width: 154px;
+    animation-name: fadein;
+    animation-duration: 0.2s;
+}
+
+i{
+    color: #fff;
+    font-size: 1.2em;
+    animation-name: fadein2;
+    animation-duration: 0.2s;
+    opacity: 0.5;
+}
+
+.popularity{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 8px;
+}
+
+.left-icon{
+    color: #fff;
+    opacity: 1;
+}
+
+.right-icon{
+    color: #ff2a04;
+    opacity: 1;
+}
+
+.bottom-icon{
+    color: #ff2a04;
+    opacity: 0.5;
+    margin-right: 6px;
+}
+
+p{
+    color: white;
+    margin: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+@keyframes fadein2 {
+    from { opacity: 0; }
+    to   { opacity: 0.5; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein2 {
+    from { opacity: 0; }
+    to   { opacity: 0.5; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein2 {
+    from { opacity: 0; }
+    to   { opacity: 0.5; }
+}

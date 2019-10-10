@@ -1,0 +1,63 @@
+.item{
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    height: auto;
+    width: 154px;
+}
+
+.poster{
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px 0.5px;
+    max-height: 222px;
+    max-width: 160px;
+}
+
+.mv{
+    height: 222px;
+    width: 160px;
+}
+
+.mv:hover{
+    cursor: pointer;
+}
+.details{
+    margin: 4px 0px 0px 0px;
+}
+
+.title{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.year{
+    color: gray;
+    font-size: 12px; 
+    font-weight: 500;
+}
+
+
+
+.gradient
+{
+    background-size: 200% 200%;
+    position: relative;
+    height: 222px;
+    width: 150px;
+    background-image: linear-gradient(45deg, rgba(30,30,33,1) 0%, rgba(43,43,51,1) 33%, rgba(30,30,33,1) 33%, rgba(43,43,51,1) 62%, rgba(30,30,33,1) 62%, rgba(30,30,33,1) 100%);
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
