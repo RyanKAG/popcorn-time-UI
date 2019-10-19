@@ -1,0 +1,10 @@
+.item-tags{
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: baseline;
+}
+.imdb{
+    width: 27px;
+    height: 17px;
+    background-image: url('./assets/imdb.png');
+}

@@ -31,6 +31,8 @@ export class Item extends Component {
 
     render() {
         let isLoaded = this.props.img !== null;
+        let img = new Image();
+        img.src = this.props.img;
         let style = { backgroundImage: `url('${this.props.img}')` };
         return (
             <li value={this.props.popularity} className='item'>

@@ -25,8 +25,11 @@ class API {
     static getPoster(posterPath) {
         return img_base_url + "/w154" + posterPath;
     }
-}
 
+    static getPosterW(posterPath, width) {
+        return img_base_url + `/w${width}` + posterPath;
+    }
+}
 
 
 export default API;
