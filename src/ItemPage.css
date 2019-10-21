@@ -1,9 +1,53 @@
-.item-tags{
+.item-infos {
     display: flex;
     justify-content: flex-start;
     vertical-align: baseline;
+    background-color: transparent;
+
 }
-.imdb{
+
+.item-cover{
+    vertical-align: baseline;
+}
+
+.item-cover-img{
+    background: center no-repeat;
+    background-blend-mode: darken;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: 100vw;
+    min-height: 215px;
+    background-size: cover;
+
+}
+
+.item-header {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-poster{
+}
+
+.item-metadata{
+    margin-left: 28px;
+    color: #fff;
+}
+
+.separator {
+    color: #fff;
+    font-weight: bold;
+    margin: 0px 8px;
+}
+
+.year {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.imdb {
     width: 27px;
     height: 17px;
     background-image: url('./assets/imdb.png');

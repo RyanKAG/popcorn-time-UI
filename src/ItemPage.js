@@ -8,21 +8,28 @@ export class ItemPage extends Component {
 
 
     render() {
+        let img = new Image();
+        let img2= new Image();
+        img.src = API.getPosterW(this.props.path, 154);
+        img2.src = API.getPosterW(this.props.path, 500);
         console.log(imdb);
         return (
             <div className='item-page'>
-                <section className='item-info'>
-                    <div className='poster' style={{backgroundImage: `url(${API.getPoster(this.props.path, 154)})`}}/>
-                    <div className='item-details'>
-                        <h2>{this.props.title}</h2> 
-                        <div className='item-tags'>
-                            <div className='year'>{this.props.year}</div>
+                <section className='item-header' >
+                    <div className='item-cover' >
+                        <div className='item-cover-img' style={{backgroundImage: `url(${img2.src})`}}/>
+                    </div>
+                    <img className='item-poster' src={img.src}/>
+                    <div className='item-metadata'>
+                        <h2>John Wick</h2>
+                        <div className='item-infos'>
+                            <div className='year'>2009</div>
                             <span className='separator'>|</span>
-                            <div className='duration'>{this.props.duration}</div>
+                            <div className='duration'>2.4h</div>
                             <span className='separator'>|</span>
+                            <div className='genres'>action/comedy/sci-fi/sex</div>
                             <div className='imdb'/>
                         </div>
-                        <p>{this.props.plot}</p>
                     </div>
                 </section>
 

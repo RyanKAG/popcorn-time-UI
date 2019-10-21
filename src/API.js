@@ -27,7 +27,7 @@ class API {
     }
 
     static getPosterW(posterPath, width) {
-        return img_base_url + `/w${width}` + posterPath;
+        return img_base_url + `/w${width}` + '/d8u4jpkDKgEPDJUl4g3vOOP3mDe.jpg';
     }
 }
 
