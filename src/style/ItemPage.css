@@ -7,14 +7,14 @@
 }
 
 .item-cover{
-    vertical-align: baseline;
+    
 }
 
 .item-cover-img{
-    background: center no-repeat;
+    background: rgba(0, 0, 0, .65) center no-repeat;
     background-blend-mode: darken;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
     width: 100vw;
     min-height: 215px;
     background-size: cover;
@@ -28,9 +28,23 @@
 }
 
 .item-poster{
+    position: absolute;
+    z-index: 2;
+}
+
+.item-img{
+    border-radius: 4px;
+    width: 134px;
+    height: 197px;
+    margin: 16px 0 0 32px;
+    background-position: center;
+    background-size: cover;
 }
 
 .item-metadata{
+    position: absolute;
+    z-index: 2;
+    left: 182px;
     margin-left: 28px;
     color: #fff;
 }
@@ -50,5 +64,5 @@
 .imdb {
     width: 27px;
     height: 17px;
-    background-image: url('./assets/imdb.png');
+    background-image: url('../assets/imdb.png');
 }

@@ -6,7 +6,6 @@ header{
     display:flex;
     justify-content: space-between;
     font-weight: 400;
-    color: white;
 }
 
 
@@ -25,17 +24,19 @@ nav li{
 
 }
 
-nav li a {
+.navlink {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+    text-decoration: none;
+    color: white;
     cursor: pointer;
 }
 
 
-nav li a::after{
+.navlink::after, .active-link::after{
     content: '';
     display: block;
     height: 4px;
@@ -46,7 +47,7 @@ nav li a::after{
     position: absolute;
 }
 
-nav li a:hover::after{
+.navlink:hover::after, .active-link::after{
     width: 100%;
 }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './ItemActions.css';
+import '../style/ItemActions.css';
 export class ItemActions extends Component {
     static defaultProps = {
         isHovering: false,

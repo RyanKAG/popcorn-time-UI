@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Browser from './Browser';
-import './Window.css';
-import ItemPage from './ItemPage';
+import Browser from './components/Browser';
+import ItemPage from './components/ItemPage';
 
 function App() {
   return (
     <div className='App'>
-      <ItemPage title='john wick' year='2019' tegs='action/comedy/drama' />
+      <Browser />
     </div>
   );
 }

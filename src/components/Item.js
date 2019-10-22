@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './Item.css';
-import ItemActions from './ItemActions';
+import '../style/Item.css';
+import ItemActions from '../actions/ItemActions';
 
 export class Item extends Component {
     static defaultProps = {
